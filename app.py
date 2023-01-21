@@ -11,12 +11,11 @@ CORS(app)
 
 @app.post("/predict")
 def predict():
-    print('Hello!')
-    # text = request.get_json().get("message")
-    # # Checks if text is valid
-    # reponse = get_response(text)
-    # message = {"answer" : reponse}
-    # return jsonify(message)
+    text = request.get_json().get("message")
+    # Checks if text is valid
+    reponse = get_response(text)
+    message = {"answer" : reponse}
+    return jsonify(message)
 
-if __name__ == "__main__":
-    app.run(debug=True)
+# if __name__ == "__main__":
+#     app.run(debug=True)
