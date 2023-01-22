@@ -1,6 +1,6 @@
 import random
 import json
-
+import nltkmodules
 import torch
 
 from model import NeuralNet

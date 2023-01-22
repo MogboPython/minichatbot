@@ -3,6 +3,7 @@ import nltk
 # nltk.download('punkt')
 from nltk.stem.porter import PorterStemmer
 stemmer = PorterStemmer()
+import nltkmodules
 
 
 def tokenize(sentence):
