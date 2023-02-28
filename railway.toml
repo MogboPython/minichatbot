@@ -4,4 +4,6 @@ buildCommand = "echo building!"
 
 [deploy]
 startCommand = "echo starting!"
+healthcheckPath = "/health"
+healthcheckTimeout = 300
 restartPolicyType = "never"
