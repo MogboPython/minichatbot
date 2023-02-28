@@ -9,9 +9,6 @@ CORS(app)
 def index_get():
     return "Hello, Welcome to Minichatbot!", 200
 
-# @app.get("/health")
-# def health():
-#     return "Success, Welcome to Minichatbot!", 200
 
 @app.post("/predict")
 def predict():
