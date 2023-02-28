@@ -3,5 +3,5 @@ builder = "nixpacks"
 buildCommand = "echo building!"
 
 [deploy]
-startCommand = "echo starting!"
+startCommand = "gunicorn app:app"
 restartPolicyType = "never"
